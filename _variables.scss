@@ -40,15 +40,22 @@ $link-hover-decoration:     underline !default;
 
 //Buttons:
 
-$btn-font-weight: normal !default;
-$btn-font-size: 16px !default;
-$btn-border-width: 1px !default;
-$btn-border-radius: 0 !default;
-$btn-padding-x: 20px !default;
-$btn-padding-y: 10px !default;
-$btn-primary-bg: $brand-primary !default;
-$btn-brand-bg-hover: lighten($brand-primary, 20%) !default;
-$btn-brand-border-hover: lighten($brand-primary, 20%) !default;
+$btn-font-weight:            normal !default;
+$btn-font-size:              16px !default;
+$btn-border-width:           1px !default;
+$btn-border-radius:          0 !default;
+$btn-padding-x:              20px !default;
+$btn-padding-y:              10px !default;
+$btn-primary-bg:             $brand-primary !default;
+$btn-brand-bg-hover:         lighten($brand-primary, 20%) !default;
+$btn-brand-border-hover:     lighten($brand-primary, 20%) !default;
 
 //Forms:
+
+$input-bg:                    #fff !default;
+$input-bg-disabled:           $gray-lighter !default;
+$input-color:                 $text-color !default;
+$input-border-radius:         0 !default;
+$input-border-focus:          #66afe9 !default;
+$form-group-margin-bottom:    15px !default;
 
