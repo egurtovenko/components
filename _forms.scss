@@ -1,0 +1,49 @@
+$form-succes:  $succes-color;
+$form-danger:  $danger-color;
+$form-warning: $warning-color;
+$form-normal:  $normal-color;
+$input-color:   #434a54;
+
+@mixin form-size ($width, $bradius, $bord, $pad...) {
+	width: $width;
+	border-radius: $bradius;
+	border: $bord;
+	padding: $pad;
+}
+@mixin form-variant ($bcol, $color) {
+	border-color: $bcol;
+	color: $color;
+}
+.form__group {
+	border: none;
+	.form__control {
+		@include form-size (100%, 4px, 1px solid $form-normal, 6px 12px);
+		color: $input-color;
+
+	&--pill {
+		border-radius: $pill;
+	}
+	&--has-succes {
+		@include form-variant ($form-succes, $form-succes);
+	}
+	&--has-danger {
+		@include form-variant ($form-danger, $form-danger);
+	}
+	&--has-warning {
+		@include form-variant ($form-warning, $form-warning);
+	}
+	}
+	.form__label {
+		font-weight: 400;
+		&--succes {
+			color: $form-succes;
+		}
+		&--danger {
+			color: $form-danger;
+		}
+		&--warning {
+			color: $form-warning;
+		}
+	}
+
+}
