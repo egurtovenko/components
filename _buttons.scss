@@ -1,12 +1,3 @@
-$btn-default:   $default-color;
-$btn-normal:    $normal-color;
-$btn-primary:   $primary-color;
-$btn-succes:    $succes-color;
-$btn-info:      $info-color;
-$btn-warning:   $warning-color;
-$btn-danger:    $danger-color;
-$btn-fontcolor: $font;
-
 @mixin btn-variant ($bg, $color, $bord: none){
 	background: $bg;
 	color: $color;
