@@ -1,11 +1,54 @@
-$primary-color: #3bafda;
-$normal-color:  #aab2bd;
-$succes-color:  #8cc152;
-$info-color:    #37bc9b;
-$warning-color: #f6bb42;
-$danger-color:  #da4453;
-$font:             #fff;
-$default-color:    #fff;
-$default-font:     #000;
-$fz: 		       14px;
-$pill:             15px;
+//Colors:
+
+$gray-base:        #000 !default;
+$gray-dark:        lighten($gray-base, 20%) !default;
+$gray-darker:      lighten($gray-base, 10%) !default;
+$gray:             lighten($gray-base, 30%) !default;
+$gray-light:       lighten($gray-base, 40%) !default;
+$gray-lighter:     lighten($gray-base, 90%) !default;
+$brand-primary:    #3bafda !default;
+$brand-success:    #5cb85c !default;
+$brand-info:       #5bc0de !default;
+$brand-warning:    #f0ad4e !default;
+$brand-danger:     #d9534f !default;
+
+//Typography:
+
+$font-family-sans-serif:    "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:         Georgia, "Times New Roman", Times, serif !default;
+$font-family-base:          $font-family-sans-serif !default;
+$font-size-base:            14px !default;
+$line-height-base:          1.2 !default;
+$font-size-h1:              floor(($font-size-base * 2.6)) !default;
+$font-size-h2:              floor(($font-size-base * 2.15)) !default;
+$font-size-h3:              ceil(($font-size-base * 1.7)) !default;
+$font-size-h4:              ceil(($font-size-base * 1.25)) !default;
+$font-size-h5:              $font-size-base !default;
+$font-size-h6:              ceil(($font-size-base * 0.85)) !default;
+$headings-font-family:      inherit !default;
+$headings-font-weight:      500 !default;   
+$headings-line-height:      1.1 !default;
+$headings-color:            inherit !default;
+
+//Scaffolding:
+
+$body-bg:                   #fff !default;
+$text-color:                $gray-base !default;
+$link-color:                $brand-primary !default;
+$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-decoration:     underline !default;
+
+//Buttons:
+
+$btn-font-weight: normal !default;
+$btn-font-size: 16px !default;
+$btn-border-width: 1px !default;
+$btn-border-radius: 0 !default;
+$btn-padding-x: 20px !default;
+$btn-padding-y: 10px !default;
+$btn-primary-bg: $brand-primary !default;
+$btn-brand-bg-hover: lighten($brand-primary, 20%) !default;
+$btn-brand-border-hover: lighten($brand-primary, 20%) !default;
+
+//Forms:
+
