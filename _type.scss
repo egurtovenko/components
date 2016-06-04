@@ -27,40 +27,9 @@ h1,h2,h3,h4,h5,h6 {
 	line-height: $headings-line-height;
 	font-family: $headings-font-family;
 }
-input,textarea,select{
-	font:100% $font-family-base;
-	vertical-align:middle;
-}
-form,fieldset{
-	margin:0;
-	padding:0;
-	border-style:none;
-}
-button,
-input[type=cancel],
-input[type=reset],
-input[type=submit]:hover{cursor:pointer;}
-input[type=submit],
-input[type=text],
-input[type=password],
-input[type=file],
-textarea{-webkit-appearance:none;}
-textarea,
-input[type=submit],
-input[type=text]{-webkit-border-radius:0;}
-input[type=image]{
-	padding:0;
-	border:none;
-}
-button::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner,
-input[type="reset"]::-moz-focus-inner{
-	padding:0 !important;
-	border:0 none !important;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
-form :-moz-placeholder{color:$input-color;}
-form ::-moz-placeholder{color:$input-color; opacity:1;}
-form :-ms-input-placeholder{color:$input-color;}
-form ::-webkit-input-placeholder{color:$input-color;}
+h1{font-size: $font-size-h1; margin: $margin-h1;}
+h2{font-size: $font-size-h2; margin: $margin-h2;}
+h3{font-size: $font-size-h3; margin: $margin-h3;}
+h4{font-size: $font-size-h4; margin: $margin-h4;}
+h5{font-size: $font-size-h5; margin: $margin-h5;}
+h6{font-size: $font-size-h6; margin: $margin-h6;}
