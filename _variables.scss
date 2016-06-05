@@ -25,7 +25,7 @@ $font-size-h3:              ceil(($font-size-base * 1.7)) !default;
 $font-size-h4:              ceil(($font-size-base * 1.25)) !default;
 $font-size-h5:              $font-size-base !default;
 $font-size-h6:              ceil(($font-size-base * 0.85)) !default;
-$margin-h1:					30px !default!;
+$margin-h1:					30px !default;
 $margin-h2:					20px !default;
 $margin-h3:					15px !default;
 $margin-h4:					10px !default;	
@@ -35,7 +35,6 @@ $headings-font-family:      inherit !default;
 $headings-font-weight:      500 !default;   
 $headings-line-height:      1.1 !default;
 $headings-color:            inherit !default;
-
 
 //Scaffolding:
 
@@ -63,8 +62,11 @@ $btn-brand-border-hover:     lighten($brand-primary, 20%) !default;
 
 $input-bg:                    #fff !default;
 $input-bg-disabled:           $gray-lighter !default;
-$input-color:                 $text-color !default;
+$input-color:                 $gray-base !default;
+$input-border:                #ccc !default; 
 $input-border-radius:         0 !default;
 $input-border-focus:          #66afe9 !default;
 $form-group-margin-bottom:    15px !default;
+$form-succes-color:           $brand-success;
+$form-danger-color:           $brand-danger;
 

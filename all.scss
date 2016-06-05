@@ -1,11 +1,5 @@
 @import "_variables.scss";
 @import "_normalize.scss";
+@import "_type.scss";
 @import "_buttons.scss";
 @import "_forms.scss";
-body {
-	background: #f1f1f1;
-}
-.wrapper {
-	width: 1300px;
-	margin: 0 auto;
-}
