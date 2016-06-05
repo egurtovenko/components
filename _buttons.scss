@@ -24,7 +24,7 @@
 	text-align: center;
 	border: $btn-border-width solid transparent;
 	@include btn-size ($btn-border-radius, $btn-font-size, $btn-padding-y, $btn-padding-x);
-	&--primari {
+	&--primary {
 		@include btn-variant ($btn-primary-bg, $btn-text-primary, $btn-border-primary, $btn-brand-bg-hover, $btn-brand-border-hover);
 	}
 }
