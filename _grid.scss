@@ -1,5 +1,5 @@
 $n: 12;
-@for $i from 1 through 12 {
+@for $i from 1 through $n {
 	.column-#{$i} {
 		width: ($i * 100% / $n);
 	}
