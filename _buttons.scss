@@ -1,46 +1,30 @@
-@mixin btn-variant ($bg, $color, $bord: none){
-	background: $bg;
+//Mixin
+
+@mixin btn-variant ($background, $color, $border, $hover-color, $border-hover){
+	background-color: $background;
 	color: $color;
-	border: $bord;
+	border-color: $border;
 		&:hover,
 		&.active {
-			background: lighten($bg, 10%);
+			background: $hover-color;
+			border-color: $border-hover;
 		} 
 }
-@mixin btn-size ($min-width, $bradius, $pad...){
-	min-width: $min-width;
-	border-radius: $bradius;
-	padding: $pad;
+@mixin btn-size ($border-radius, $font-size, $padding-y, $padding-x){
+	border-radius: $border-radius;
+	font-size: $font-size;
+	padding: $padding-y $padding-x;
 }
 
+//Button
+
 .btn {
-	@include btn-size (140px, 4px, 5px 20px);
+	font-weight: $btn-font-weight;
 	display: inline-block;
-	font-size: $fz;
-	text-transform: uppercase;
-	&--default {
-		@include btn-variant ($btn-default, $default-font);
-			&:hover,
-			&.active {
-				background: darken($btn-default, 20%);
-			}
-	}
-	&--normal {
-		@include btn-variant ($btn-normal, $btn-fontcolor);
-	}
-	&--primary {
-		@include btn-variant ($btn-primary, $btn-fontcolor);
-	}
-	&--succes {
-		@include btn-variant ($btn-succes, $btn-fontcolor);
-	}
-	&--info {
-		@include btn-variant ($btn-info, $btn-fontcolor);
-	}
-	&--warning {
-		@include btn-variant ($btn-warning, $btn-fontcolor);
-	}
-	&--danger {
-		@include btn-variant ($btn-danger, $btn-fontcolor);
+	text-align: center;
+	border: $btn-border-width solid transparent;
+	@include btn-size ($btn-border-radius, $btn-font-size, $btn-padding-y, $btn-padding-x);
+	&--primari {
+		@include btn-variant ($btn-primary-bg, $btn-text-primary, $btn-border-primary, $btn-brand-bg-hover, $btn-brand-border-hover);
 	}
 }

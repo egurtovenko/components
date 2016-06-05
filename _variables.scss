@@ -49,8 +49,10 @@ $link-hover-decoration:     underline !default;
 
 $btn-font-weight:            normal !default;
 $btn-font-size:              16px !default;
+$btn-text-primary:			 $gray-base;                
 $btn-border-width:           1px !default;
 $btn-border-radius:          0 !default;
+$btn-border-primary:		 $brand-primary;
 $btn-padding-x:              20px !default;
 $btn-padding-y:              10px !default;
 $btn-primary-bg:             $brand-primary !default;
