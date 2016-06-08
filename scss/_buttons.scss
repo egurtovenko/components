@@ -1,0 +1,30 @@
+//Mixin
+
+@mixin btn-variant ($background, $color, $border, $hover-color, $border-hover){
+	background-color: $background;
+	color: $color;
+	border-color: $border;
+		&:hover,
+		&.active {
+			background: $hover-color;
+			border-color: $border-hover;
+		} 
+}
+@mixin btn-size ($border-radius, $font-size, $padding-y, $padding-x){
+	border-radius: $border-radius;
+	font-size: $font-size;
+	padding: $padding-y $padding-x;
+}
+
+//Button
+
+.btn {
+	font-weight: $btn-font-weight;
+	display: inline-block;
+	text-align: center;
+	border: $btn-border-width solid transparent;
+	@include btn-size ($btn-border-radius, $btn-font-size, $btn-padding-y, $btn-padding-x);
+	&--primary {
+		@include btn-variant ($btn-primary-bg, $btn-text-primary, $btn-border-primary, $btn-brand-bg-hover, $btn-brand-border-hover);
+	}
+}

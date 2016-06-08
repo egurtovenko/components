@@ -1,0 +1,14 @@
+$n: 12;
+$breakpoint-variant: (sm: 480px, md: 768px, lg: 980px);
+
+@each $var, $key in  $breakpoint-variant {
+	@media screen and (min-width: $key) {
+		.#{$var} {
+			@for $i from 1 through $n {
+				&-column-#{$i} {
+					width: ($i * 100% / $n);
+				}
+			}
+		}
+	}
+}
