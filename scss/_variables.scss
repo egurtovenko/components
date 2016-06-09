@@ -18,6 +18,8 @@ $font-family-sans-serif:    "Helvetica Neue", Helvetica, Arial, sans-serif !defa
 $font-family-serif:         Georgia, "Times New Roman", Times, serif !default;
 $font-family-base:          $font-family-sans-serif !default;
 $font-size-base:            14px !default;
+$font-size-large:           ceil(($font-size-base * 1.25)) !default;
+$font-size-small:           ceil(($font-size-base * 0.85)) !default;
 $line-height-base:          1.2 !default;
 $font-size-h1:              floor(($font-size-base * 2.6)) !default;
 $font-size-h2:              floor(($font-size-base * 2.15)) !default;
@@ -47,16 +49,32 @@ $link-hover-decoration:     underline !default;
 //Buttons:
 
 $btn-font-weight:            normal !default;
-$btn-font-size:              16px !default;
+$btn-font-size:              14px !default;
 $btn-text-primary:			 $gray-base;                
 $btn-border-width:           1px !default;
 $btn-border-radius:          0 !default;
 $btn-border-primary:		 $brand-primary;
+$btn-border-success:		 $brand-success;
+$btn-border-info:		 	 $brand-info;
+$btn-border-warning:		 $brand-warning;
+$btn-border-danger:		     $brand-danger;
 $btn-padding-x:              20px !default;
 $btn-padding-y:              10px !default;
 $btn-primary-bg:             $brand-primary !default;
+$btn-success-bg:             $brand-success !default;
+$btn-info-bg:                $brand-info !default;
+$btn-warning-bg:             $brand-warning !default;
+$btn-danger-bg:              $brand-danger !default;
 $btn-brand-bg-hover:         lighten($brand-primary, 20%) !default;
 $btn-brand-border-hover:     lighten($brand-primary, 20%) !default;
+$btn-success-bg-hover:       lighten($brand-success, 20%) !default;
+$btn-success-border-hover:   lighten($brand-success, 20%) !default;
+$btn-info-bg-hover:          lighten($brand-info, 20%) !default;
+$btn-info-border-hover:      lighten($brand-info, 20%) !default;
+$btn-warning-bg-hover:       lighten($brand-warning, 20%) !default;
+$btn-warning-border-hover:   lighten($brand-warning, 20%) !default;
+$btn-danger-bg-hover:        lighten($brand-danger, 20%) !default;
+$btn-danger-border-hover:    lighten($brand-danger, 20%) !default;
 
 //Forms:
 
@@ -70,3 +88,9 @@ $form-group-margin-bottom:    15px !default;
 $form-succes-color:           $brand-success;
 $form-danger-color:           $brand-danger;
 
+//Paddings 
+
+$padding-large-y:     10px !default;
+$padding-large-x:     16px !default;
+$padding-small-y:     5px !default;
+$padding-small-x:     10px !default; 

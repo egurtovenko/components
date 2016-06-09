@@ -16,15 +16,48 @@
 	padding: $padding-y $padding-x;
 }
 
-//Button
+//Button default
 
 .btn {
 	font-weight: $btn-font-weight;
 	display: inline-block;
 	text-align: center;
 	border: $btn-border-width solid transparent;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	white-space: nowrap;
 	@include btn-size ($btn-border-radius, $btn-font-size, $btn-padding-y, $btn-padding-x);
-	&--primary {
-		@include btn-variant ($btn-primary-bg, $btn-text-primary, $btn-border-primary, $btn-brand-bg-hover, $btn-brand-border-hover);
-	}
+}
+
+//Buttons color
+
+.btn--primary {
+	@include btn-variant ($btn-primary-bg, $btn-text-primary, $btn-border-primary, $btn-brand-bg-hover, $btn-brand-border-hover);
+}
+
+.btn--success {
+	@include btn-variant ($btn-success-bg, $btn-text-primary, $btn-border-success, $btn-success-bg-hover, $btn-success-border-hover);
+}
+
+.btn--warning {
+	@include btn-variant ($btn-warning-bg, $btn-text-primary, $btn-border-warning, $btn-warning-bg-hover, $btn-warning-border-hover);
+}
+
+.btn--info {
+	@include btn-variant ($btn-info-bg, $btn-text-primary, $btn-border-info, $btn-info-bg-hover, $btn-info-border-hover);
+}
+
+.btn--danger {
+	@include btn-variant ($btn-danger-bg, $btn-text-primary, $btn-border-danger, $btn-danger-bg-hover, $btn-danger-border-hover);
+}
+
+//Buttons size 
+
+.btn--large {
+	@include btn-size ($btn-border-radius, $font-size-large, $padding-large-y, $padding-large-x);
+}
+
+.btn--small {
+	@include btn-size ($btn-border-radius, $font-size-small, $padding-small-y, $padding-small-x);
 }
